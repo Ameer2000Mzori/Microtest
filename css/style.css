@@ -10,6 +10,7 @@ body{
     position: fixed;
     display: flex;
     width: 100%;
+    top: 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
@@ -108,7 +109,62 @@ body{
 .sections p{
     margin: 0px;
 }
-
+#how_it_works{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#price{
+    display: flex;
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+    align-items: center;
+}
+.products{
+    display: block;
+    border: solid .3px black;
+    border-radius: .4px;
+    text-align: center;
+    align-items: center;
+    margin: 15px 15px 5px 15px;
+    width: 33%;
+    
+}
+.product-price{
+        font-size: 25px;
+        margin: 10px 0px;
+}
+.product-title{
+    background-color: rgb(211, 209, 209);
+    padding: 15px 0px;
+}
+.products ol {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.products ol li{
+    list-style-type: none;
+    padding: 10px;
+}
+.btn{
+    background-color: #f5bb50;
+    border: none;
+    margin: 15px 0px 5px 0px;
+    padding: 10px 30px 10px 30px;
+    text-transform: uppercase;
+    transition: background-color;
+    transition-duration: 1s;
+}
+.btn:hover{
+background-color: #FFA500;
+cursor: pointer;
+}
 @media(max-width:600px){
     #nav-bar ul li{
         width: 100%;
