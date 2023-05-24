@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+/* header */
+#header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+#nav-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+#nav-bar ul li{
+    margin: 0px 5px;
+}
+#nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+@media(max-width:600px){
+    #nav-bar ul li{
+        width: 100%;
+        margin: 5px 0px;
+    }
+}
