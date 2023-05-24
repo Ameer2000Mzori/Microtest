@@ -4,6 +4,7 @@ body{
     background-color: #eee;
     font-family: 'Lato', sans-serif;
 }
+
 /* header */
 #header{
     position: fixed;
@@ -13,23 +14,109 @@ body{
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
+    background-color: #eee;
 }
+
 #nav-bar ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
 }
+
 #nav-bar ul li{
     margin: 0px 5px;
 }
+
 #nav-bar ul li a{
     text-decoration: none;
     color: black;
 }
+
+/* SECTION */
+.form{
+    padding-top: 90px;
+    width: 80%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.form form{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.form form #email{
+    display: inline-block;
+    width: 275px;
+    margin: 10px 0px;
+    padding: 5px 2px;
+}
+
+.form form #submit{
+    text-transform: uppercase;
+    padding: 3px 3px 3px 20px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: #f5bb50;
+    transition-property: background-color;
+    border: none;
+    transition-duration: .5s;
+}
+
+.form form #submit:hover {
+    cursor: pointer;
+    background-color: #FFA500;
+    /* transition-delay: .5s; */
+}
+
+.sections{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5px 0px; */
+    margin: 0px auto;
+    height: 125px;
+    /* justify-items: center; */
+}
+
+.sections .icon{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections #content{
+    padding: 5px 0px;
+    width: 80%;
+    /* height: 125px; */
+}
+
+.sections .icon i{
+    /* font-size: 50px; */
+    color: #FFA500;
+    justify-self: center;
+}
+
+.sections .header{
+    margin: 0px;    
+}
+
+.sections p{
+    margin: 0px;
+}
+
 @media(max-width:600px){
     #nav-bar ul li{
         width: 100%;
         margin: 5px 0px;
+    }
+
+    .form{
+        padding-top: 150px;
+        width: 100%;
     }
 }
